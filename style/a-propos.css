@@ -314,7 +314,7 @@ footer .footer .footer-links .yudil-partenaire a {
   display: flex;
   margin-left: -29%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 358px) {
   body {
     width: 100%;
   }
@@ -430,7 +430,7 @@ footer .footer .footer-links .yudil-partenaire a {
     display: none;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 358px) and (max-width: 768px) {
   body {
     width: 100%;
     height: auto;

@@ -74,7 +74,7 @@
   margin-top: 20px;
   color: #1f2039;
 } 
-@media screen and (max-width:480px){
+@media screen and (max-width:358px){
   body{
     width: 100%;
     height: auto;
@@ -93,7 +93,7 @@
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 481px) and  (max-width: 768px)  {
+@media screen and (min-width: 358px) and  (max-width: 768px)  {
   body{
     width: 100%;
     height: auto;

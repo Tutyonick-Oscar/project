@@ -100,7 +100,7 @@
 .AAN{
   margin-left: -500px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:358px) {
   body{
     width: 100%;
   }

@@ -1,3 +1,28 @@
+<?php
+function secure ($data){
+   return trim(strip_tags(stripslashes($data)));
+}
+if(isset($_POST['submit'])){
+    $name =secure($_POST['nom']);
+    $mail = secure($_POST['mail']);
+    $message = secure($_POST['message']);
+    if(!empty($name && $mail && $message)){
+        $message = wordwrap($message,70,'\r\n');
+        $recevable ='ce message vous est envoyé via le site... 
+        par : 
+        '.$name. ' 
+        E-mail : '.$mail.' 
+        Message : '.$message;
+        $sujet = 'je viens de visiter votre site';
+        $headers = 'Reply-to:'.$mail;
+        mail('tuliamtendji@gmail.com',$sujet, 
+        $recevable,$headers);
+    }
+    else{
+        echo 'remplissez tout les champs';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -108,7 +133,7 @@
       </section>
       <section class="section-contact">
         <h2>ETES-VOUS INTERESSE ?</h2>
-        <form method="post" action="www/yudil.php">
+        <form method="post">
           <div class="form-nom-email">
             <div class="form-column">
               <label for="nom">nom</label>
