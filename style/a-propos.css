@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+body {
+  width: 100%;
+  height: auto;
+}
+main {
+  width: 100%;
+  background-image: url(../images/YUDIL\ CONGO\ SARL.png);
+  background-repeat: no-repeat;
+  background-size:500px;
+  background-attachment: fixed;
+  background-blend-mode:darken;
+  background-color: #1f2039c5;
+  background-position: center;
+}
+.carre-contenu {
+  border-right: 1px solid #8e86b5;
+  border-bottom: 1px solid #8e86b5;
+  padding: 50px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.p2 {
+  padding-left: 50px;
+}
+.green,
+.val-title {
+  color: green;
+}
+.values {
+  align-self: flex-start;
+  color: green;
+}
+.fa-circle-check {
+  padding-right: 20px;
+  color: #8e86b5;
+}
+.left {
+  padding-left: 13.5%;
+}
+.carre-contenu h2 {
+  margin-bottom: -10px;
+  padding: 40px 0;
+}
+
+.carre-contenu ul {
+  margin-top: 30px;
+}
+
+.carre-contenu + div {
+  text-align: center;
+}
+
+.a-propos-main {
+  margin: auto;
+}
+h2 {
+  margin-bottom: 80px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+.AAN {
+  margin-left: -500px;
+}
+*/ footer {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: #1f2039;
+}
+/* modifications*/
+.section-tarifs {
+  display: flex;
+  gap: 5rem;
+  width: 100%;
+}
+.details {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details h2 {
+  margin-left: -40%;
+}
+.details ul {
+  margin-top: -3rem;
+  line-height: 3;
+  margin-left: -20%;
+}
+.details ul li {
+  list-style: none;
+}
+.tarif {
+  width: 60%;
+  height: auto;
+}
+.tarif .img-container {
+  width: 100%;
+  display: flex;
+  margin-top: -5%;
+  gap: 20px;
+  /* position: relative; */
+}
+/*all details in display none*/
+.alls-datails {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: 2px 2px 3px;
+  margin-left: 15%;
+  margin-top: -3%;
+  border-radius: 5px;
+}
+.hidden {
+  display: none;
+}
+.alls-datails div {
+  width: 100%;
+  position: relative;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.873);
+  padding-left: 20px;
+  height: 40%;
+  justify-content: center;
+}
+.alls-datails div h3,
+.alls-datails div p {
+  text-align: center;
+}
+.alls-datails div p:last-child {
+  color: green;
+  font-size: 1.5em;
+}
+.alls-datails img {
+  width: 100%;
+  height: 60%;
+}
+.alls-datails div .fa-x {
+  align-self: flex-end;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+.alls-datails div .fa-solid:hover {
+  background-color: rgba(191, 44, 44, 0.621);
+}
+.product-details {
+  position: relative;
+  padding: 0 20px 20px 0;
+}
+.product-details .img-view {
+  transition: all 0.2s;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px;
+}
+.product-details .img-view:hover {
+  transform: scale(1.2);
+}
+.product-details button {
+  position: absolute;
+  bottom: 23%;
+  left: 2%;
+  cursor: pointer;
+  padding: 4px 8px;
+  background-color: #1f2039;
+  color: rgba(255, 255, 255, 0.76);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+.product-details button:hover {
+  transform: scale(1.2);
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.tarif .img-container div {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer {
+  position: relative;
+  padding: 30px 30px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+footer .footer .foot-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 10vh;
+  gap: 60px;
+  background-color: #1f2039;
+  box-shadow: 2px 2px 5px;
+}
+footer .footer .foot-header div {
+  width: 33.3%;
+  padding-left: 50px;
+}
+footer .footer .foot-header div p {
+  color: rgba(128, 128, 128, 0.897);
+  font-size: 1.1em;
+}
+footer .footer .foot-header div p i {
+  color: #fcfffc;
+  font-size: 1.5em;
+}
+footer .footer .foot-header div .descrip {
+  color: #fcfffc;
+}
+footer .footer .footer-links {
+  width: 100%;
+  padding-right: 30px;
+  height: 60vh;
+  background-color: #1f2039;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px;
+}
+footer .footer .footer-links div {
+  width: 33.3%;
+  padding-left: 70px;
+}
+footer .footer .footer-links .media h3 {
+  font-size: 1.3em;
+  color: #fcfffc;
+  font-weight: 400;
+}
+footer .footer .footer-links .media p {
+  font-size: 1.1em;
+  color: rgba(128, 128, 128, 0.897);
+}
+footer .footer .footer-links .media a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+footer .footer .footer-links .media a i {
+  color: #2c3e50;
+  background-color: #fcfffc;
+  border-radius: 100%;
+  padding: 5px;
+}
+footer .footer .footer-links .quick-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+footer .footer .footer-links .quick-links h3 {
+  font-size: 1.3em;
+  color: #fcfffc;
+  font-weight: 400;
+}
+footer .footer .footer-links .quick-links a {
+  text-decoration: none;
+  color: #fcfffc;
+  font-size: 1.1em;
+}
+footer .footer .footer-links .yudil-partenaire {
+  margin-left: 30px;
+}
+footer .footer .footer-links .yudil-partenaire h3 {
+  font-size: 1.3em;
+  color: #fcfffc;
+  font-weight: 400;
+}
+footer .footer .footer-links .yudil-partenaire p {
+  color: rgba(128, 128, 128, 0.897);
+  font-size: 1.1em;
+}
+footer .footer .footer-links .yudil-partenaire a {
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.897);
+  padding: 10px 40px;
+  border: 1px solid transparent;
+  border: 1px solid #ffffffad;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+.yudil-img {
+  display: flex;
+  gap: 60px;
+  margin-left: -80px;
+}
+.icons {
+  display: flex;
+  margin-left: -29%;
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  .navigation .logos h2 {
+    display: none;
+  }
+  .text {
+    width: 100%;
+  }
+  .carre-contenu {
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding: 10px;
+    width: 100%;
+  }
+  .section-tarifs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details ul {
+    line-height: 2;
+  }
+  .tarif {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-details img {
+    align-self: center;
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    border-top: 1px solid grey;
+    font-size: 14px;
+    width: 100%;
+  }
+  .footer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+  .foot-header {
+    padding: 0;
+    margin: 0;
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    box-shadow: 0px 0px 0px;
+  }
+  .foot-header div {
+    display: flex;
+    gap: 10px;
+    width: 30px;
+    padding-left: 0;
+
+    background-color: transparent;
+  }
+  .foot-header div p {
+    display: flex;
+  }
+  .icons {
+    left: 25%;
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+  }
+  .footer-links {
+    padding: 0;
+    margin: 0;
+  }
+  .appel {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 50rem;
+  }
+  .mssg {
+    position: absolute;
+    top: 300%;
+    left: 0;
+  }
+  .location {
+    position: absolute;
+    top: 400%;
+    left: 0;
+  }
+  .link-non {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  main {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .carre-contenu {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .section-tarifs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details {
+    width: 100%;
+    display: flex;
+  }
+  .details h2 {
+    align-self: center;
+    padding-left: 45%;
+  }
+  .details ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 25%;
+  }
+  .tarif {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarif h2 {
+    align-self: center;
+  }
+  .img-container {
+    width: 100%;
+    margin-left: -30px;
+  }
+  footer {
+    width: 100%;
+    font-size: 13px;
+  }
+  .yudil-img,
+  .yudil-img-none {
+    display: none;
+  }
+  .foot-header {
+    width: 100%;
+    height: 20vh;
+    background-color: #fff;
+  }
+  .icons {
+    margin-left: -58%;
+  }
+  .ant {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 4em;
+    font-size: 1em;
+  }
+}

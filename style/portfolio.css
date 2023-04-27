@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+.navigation{
+  width: 100%;
+  height: 10vh;
+  background-color: #1f2039;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 2px 2px 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.navigation .logos{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navigation .logos h2{
+  margin-top: 60%;
+}
+.links .items{
+  color: #ffffffc7;
+}
+.portfolio-section-photos {
+  background-color: white;
+}
+
+.portfolio-section-photos h2 {
+  color: #242424;
+  margin-bottom: 80px;
+}
+.ydl-presente h1{
+  margin-top:30px;
+}
+.grid-paysages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 15px;
+ 
+}
+.grid-paysages a{
+  text-decoration: none;
+}
+.grid-portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+
+.grid-paysages img,
+.grid-portraits img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+ 
+  
+}
+
+.lien-conteneur-photo {
+  position: relative;
+  
+}
+.crop-name{
+  color: #1f2039;
+  text-decoration: none;
+  font-size: 1.8em;
+}
+.photo-hover {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex;
+}
+.AAN{
+  margin-left: -500px;
+}
+@media screen and (max-width:480px) {
+  body{
+    width: 100%;
+  }
+  .ydl-presente{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    font-size: 10px;
+  }
+  .ydl-presente h1{
+    margin-top:-20px;
+  }
+  .portfolio-section-photos {
+    width: 100%;
+  }
+  .portfolio-section-photos h2{
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+  .grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+   
+  }
+}
