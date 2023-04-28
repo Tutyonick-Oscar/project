@@ -21,8 +21,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <script src="./js/menu.js" defer></script>
   </head>
-
   <body>
     <header>
       <nav class="navigation">
@@ -36,30 +36,40 @@
           <h2>YUDIL</h2>
         </div>
 
-        <div class="links">
+        <div class="links test-none">
           <a class="items" href="index.html">Accueil</a>
           <a class="items" href="a-propos.html">À propos</a>
           <a class="items" href="portfolio.html">Services</a>
           <a class="items" href="equipe.html">Equipe</a>
         </div>
+        <div class="open"><i class="fa-solid fa-bars open"></i></div>
+        <div class="close"> <i class="fa-solid fa-x close"></i></div>    
       </nav>
     </header>
     <main>
+      <section class="side">
+        <div class="side-bar">
+          <a class="side-items" href="index.html">Accueil</a>
+          <a class="side-items" href="a-propos.html">À propos</a>
+          <a class="side-items" href="portfolio.html">Services</a>
+          <a class="side-items" href="equipe.html">Equipe</a>
+        </div>
+      </section>
       <section class="ydl-presente">
         <h1>YUDIL VOUS PRESENTE</h1>
       </section>
       <section class="portfolio-section-photos">
         <h2>Realisations</h2>
         <div class="grid-paysages">
-          <a
+          <a 
             href="images/portfolio/aubergine.jpeg"
-            class="lien-conteneur-photo"
+            class="lien-conteneur-photo "
           >
             <img
               src="images/portfolio/aubergine.jpeg"
               alt="Mont Aoraki - Nouvelle-Zélande"
             />
-            <h1 class="crop-name">Culture d'aubergine</h1>
+            <h1 class="crop-name cult-aubrg">Culture d'aubergine</h1>
             <div class="photo-hover">Voir la photo</div>
           </a>
           <a href="images/portfolio/ail.jpg" class="lien-conteneur-photo">
@@ -144,13 +154,16 @@
             <h1 class="crop-name">Elevage des Poules</h1>
             <div class="photo-hover">Voir la photo</div>
           </a>
-          <a href="images/portfolio/matungulu2.jpg" class="lien-conteneur-photo">
+          <a
+            href="images/portfolio/matungulu2.jpg"
+            class="lien-conteneur-photo"
+          >
             <img
               src="images/portfolio/matungulu2.jpg"
               alt="Twelve Apostle - Australie"
               height="100"
             />
-            <h1 class="crop-name">production  des poirons</h1>
+            <h1 class="crop-name">production des poirons</h1>
             <div class="photo-hover">Voir la photo</div>
           </a>
         </div>
@@ -209,15 +222,22 @@
           <div class="quick-links e">
             <h3 class="link-non">Liens direct</h3>
             <br />
-            <a href="index.html">Accueil</a> <br />
-            <a href="a-propos.html">À propos</a><br />
-            <a href="portfolio.html">Services </a> <br />
-            <a href="equipe.html">Equipe</a>
+            <a href="index.html" class="link-non">Accueil</a> <br />
+            <a href="a-propos.html" class="link-non">À propos</a><br />
+            <a href="portfolio.html" class="link-non">Services </a> <br />
+            <a href="equipe.html" class="link-non">Equipe</a>
           </div>
           <div class="yudil-partenaire link-non">
             <div class="yudil-img">
-              <img class="yudil-img-none" src="images/AAN.png" alt="" width="80" height="80" />
-              <img class="yudil-img-none" 
+              <img
+                class="yudil-img-none"
+                src="images/AAN.png"
+                alt=""
+                width="80"
+                height="80"
+              />
+              <img
+                class="yudil-img-none"
                 src="images/YUDIL CONGO SARL.png"
                 alt=""
                 width="80"

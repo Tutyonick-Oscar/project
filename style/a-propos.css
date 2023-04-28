@@ -11,11 +11,14 @@ main {
   width: 100%;
   background-image: url(../images/YUDIL\ CONGO\ SARL.png);
   background-repeat: no-repeat;
-  background-size:500px;
+  background-size: 500px;
   background-attachment: fixed;
-  background-blend-mode:darken;
+  background-blend-mode: darken;
   background-color: #1f2039b6;
   background-position: center;
+}
+.close,.open,.side{
+  display: none;
 }
 .carre-contenu {
   border-right: 1px solid #8e86b5;
@@ -143,7 +146,7 @@ h2 {
 .alls-datails div p {
   text-align: center;
 }
-.alls-datails div p:last-child {
+.alls-datails div p:last-child,.plant {
   color: green;
   font-size: 1.5em;
 }
@@ -314,24 +317,56 @@ footer .footer .footer-links .yudil-partenaire a {
   display: flex;
   margin-left: -29%;
 }
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 320px) {
   body {
-    width: 100%;
+    width: 320px;
   }
   main {
     width: 100%;
   }
-  .navigation .logos h2 {
+  .test-none,.close{
     display: none;
+  }
+  .close{
+    color: #8e86b5;
+  }
+  .open{
+    display: block;
+    color: #8e86b5;
+  }
+  .side{
+    height: auto;
+    top: 13%;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+  }
+  .side .side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 40px;
+    width: 50%;
+    background-color: #8e86b5;;
+    position: absolute;
+    padding-left: 10px;
+    right: 0;
+    top: 0;
   }
   .text {
     width: 100%;
   }
-  .carre-contenu {
+  .text h1 {
+    font-size: 1.5em;
+    margin-top: -20px;
+  }
+  .text .carre-contenu {
     border-right: 1px solid #8e86b5;
     border-bottom: 1px solid #8e86b5;
     padding: 10px;
-    width: 100%;
+    width: 300px;
+    margin-left: -70px;
   }
   .section-tarifs {
     width: 100%;
@@ -339,98 +374,99 @@ footer .footer .footer-links .yudil-partenaire a {
     flex-direction: column;
     justify-content: center;
   }
-  .details {
-    width: 100%;
+  .section-tarifs .details {
+    width: 300px;
+    margin-left: -70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .details ul {
     line-height: 2;
+    display: flex;
+    flex-direction: column;
   }
-  .tarif {
+  .section-tarifs .tarif {
+    width: 300px;
+    display: flex;
+    margin-left: -70px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarif .img-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: -40px;
   }
-  .img-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .product-details img {
+ .product-details .alls-datails{
+  width: 300px;
+  height: auto;
+ }
+ .alls-datails img{
+  height: 200px;
+ }
+  .product-details .img-view {
     align-self: center;
     width: 100%;
+    margin-left: 100px;
+  }
+  .product-details .btn{
+    margin-left: 50px;
   }
   footer {
     display: flex;
-    border-top: 1px solid grey;
     font-size: 14px;
     width: 100%;
+    height: 200px;
   }
-  .footer {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100%;
+  footer .footer {
+    width: 300px;
     height: auto;
-    background-color: transparent;
   }
-  .foot-header {
+  footer .footer .foot-header {
     padding: 0;
     margin: 0;
     position: initial;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 300px;
     height: auto;
     box-shadow: 0px 0px 0px;
   }
-  .foot-header div {
-    display: flex;
-    gap: 10px;
-    width: 30px;
-    padding-left: 0;
-
-    background-color: transparent;
-  }
-  .foot-header div p {
-    display: flex;
-  }
-  .icons {
-    left: 25%;
-    display: flex;
+  .footer-links .media .icons {
     position: absolute;
-    bottom: 15%;
+    left: 35%;
+    display: flex;
+    margin-bottom: -20px;
   }
-  .footer-links {
-    padding: 0;
-    margin: 0;
+  footer .footer .footer-links {
+   width: 300px;
+   height: 100%;
+   box-shadow: 0 0 0 0;
   }
   .appel {
     position: absolute;
-    top: 200%;
-    left: 0;
+    top: 0;
+    left: -10%;
     width: 50rem;
   }
   .mssg {
     position: absolute;
-    top: 300%;
-    left: 0;
+    top: 30%;
+    left: -10%;
   }
   .location {
     position: absolute;
-    top: 400%;
-    left: 0;
+    top: 60%;
+    left: -10%;
   }
   .link-non {
     display: none;
   }
 }
-@media screen and (min-width: 358px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     width: 100%;
     height: auto;
@@ -486,13 +522,12 @@ footer .footer .footer-links .yudil-partenaire a {
   .yudil-img-none {
     display: none;
   }
-  .foot-header {
-    width: 100%;
-    height: 20vh;
-    background-color: #fff;
+  footer .footer .foot-header {
+    height: 15vh;
   }
   .icons {
     margin-left: -58%;
+    margin-top: -10px;
   }
   .ant {
     width: 100%;

@@ -21,6 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <script src="./js/apropos.js" defer></script>
+    <script src="./js/menu.js" defer></script>
   </head>
   <body>
     <header>
@@ -35,15 +36,25 @@
           <h2>YUDIL</h2>
         </div>
 
-        <div class="links">
+        <div class="links test-none">
           <a class="items" href="index.html">Accueil</a>
           <a class="items" href="a-propos.html">À propos</a>
           <a class="items" href="portfolio.html">Services</a>
           <a class="items" href="equipe.html">Equipe</a>
         </div>
+        <div class="open"><i class="fa-solid fa-bars open"></i></div>
+        <div class="close"> <i class="fa-solid fa-x close"></i></div>   
       </nav>
     </header>
     <main class="a-propos-main">
+      <section class="side">
+        <div class="side-bar">
+          <a class="side-items" href="index.html">Accueil</a>
+          <a class="side-items" href="a-propos.html">À propos</a>
+          <a class="side-items" href="portfolio.html">Services</a>
+          <a class="side-items" href="equipe.html">Equipe</a>
+        </div>
+      </section>
       <section class="text">
         <h1>À propos</h1>
         <div class="carre-contenu">
@@ -145,7 +156,7 @@
       <section class="section-tarifs">
         <div class="details">
           <h2>Services</h2>
-          <ul>
+          <ul class="liste">
             <div>
               <li>Vente des bons graines</li>
               <li>Vente des épices</li>
@@ -176,10 +187,10 @@
                 <button type="submit" class="can btn">Voir les details</button>
                 <div class="alls-datails can">
                   <div>
-                    <h3>canard</h3>
+                    <h3 class="plant">canard</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>La conformité du milieu de Rutshuru aux canards</p>
+                    <p>favorise l'élevage de ces derniers</p>
                     <p>1 = 13$</p>
                   </div>
                   <br />
@@ -204,10 +215,9 @@
                 <div class="alls-datails din">
                   <div class="">
                     <i class="fa-solid fa-x"></i>
-                    <h3>Dindon</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-
+                    <h3 class="plant">Dindon</h3>
+                    <p>La volaille n'est pas seulement pour les poules. Yudil,</p>
+                    <p>nous élevons aussi les dindons</p>
                     <p>1 = 20$</p>
                   </div>
                   <br />
@@ -231,9 +241,9 @@
                 <div class="alls-datails prc">
                   <div class="">
                     <i class="fa-solid fa-x"></i>
-                    <h3>porc</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h3 class="plant">porc</h3>
+                    <p>Des verrats, des truies ainsi que des porcelets,</p>
+                    <p>Vous en trouverez dans nos fermes</p>
                     <p>1 = 130$,25$,30$</p>
                   </div>
                   <br />
@@ -259,10 +269,10 @@
                 <button type="submit" class="tmt btn">Voir les details</button>
                 <div class="alls-datails tmt">
                   <div class="">
-                    <h3>Tomate</h3>
+                    <h3 class="plant">Tomate</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Des champs de plus de 2 hectares cultives pour</p>
+                    <p>la plantation des tomate sans OGM</p>
                     <p>1kg = 5$</p>
                   </div>
                   <br />
@@ -286,10 +296,10 @@
                 <button type="submit" class="epin btn">Voir les details</button>
                 <div class="alls-datails epin">
                   <div class="epinard">
-                    <h3>epinards</h3>
+                    <h3 class="plant">epinards</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Le légume le plus aimé et qu'on retrouve moins est l'épinard</p>
+                    <p>Yudil en dispose d'énormes quantité</p>
                     <p>1kg = 1$</p>
                   </div>
                   <br />
@@ -315,10 +325,10 @@
                 </button>
                 <div class="alls-datails auberg">
                   <div class="aubrgine">
-                    <h3>Aubergine</h3>
+                    <h3 class="plant">Aubergine</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Ici nous ne vous parlerons que de la surprenante mesure </p>
+                    <p>de nos aubergines sans OGM</p>
                     <p>1kg = 4$</p>
                   </div>
                   <br />
@@ -344,10 +354,10 @@
                 <button type="submit" class="h btn">Voir les details</button>
                 <div class="alls-datails h">
                   <div class="">
-                    <h3>Hai</h3>
+                    <h3 class="plant">Hai</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Cet épice courament utilisé n'est pas spécifiquement pour la cuisine,</p>
+                    <p>Nous le cultivons aussi pour ses bienfaits en matière de santé</p>
                     <p>1kg = 2$</p>
                   </div>
                   <br />
@@ -371,10 +381,10 @@
                 <button type="submit" class="chx btn">Voir les details</button>
                 <div class="alls-datails chx">
                   <div class="chou">
-                    <h3>Choux</h3>
+                    <h3 class="plant">Choux</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Le climat de Rutshuru offre une fertilité exceptionnelle</p>
+                    <p>à cet excellente source de vitamine C</p>
                     <p>1kg = 3$</p>
                   </div>
                   <br />
@@ -398,10 +408,10 @@
                 <button type="submit" class="ogns btn">Voir les details</button>
                 <div class="alls-datails ogns">
                   <div class="ognos">
-                    <h3>Oignos</h3>
+                    <h3 class="plant">Oignos</h3>
                     <i class="fa-solid fa-x"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Ici nous soulignerons la teneur élevé en vitamine, nutriments et </p>
+                    <p>acides aminés des oignos dont nous cultivons</p>
                     <p>1kg = 1$</p>
                   </div>
                   <br />
@@ -471,10 +481,10 @@
           <div class="quick-links e">
             <h3 class="link-non">Liens direct</h3>
             <br />
-            <a href="index.html">Accueil</a> <br />
-            <a href="a-propos.html">À propos</a><br />
-            <a href="portfolio.html">Services </a> <br />
-            <a href="equipe.html">Equipe</a>
+            <a href="index.html" class="link-non">Accueil</a> <br />
+            <a href="a-propos.html" class="link-non">À propos</a><br />
+            <a href="portfolio.html" class="link-non">Services </a> <br />
+            <a href="equipe.html" class="link-non">Equipe</a>
           </div>
           <div class="yudil-partenaire link-non">
             <div class="yudil-img">

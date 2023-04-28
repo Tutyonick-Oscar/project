@@ -21,7 +21,11 @@ main {
   align-items: center;
   padding-left: 10px;
   padding-right: 30px;
+  z-index: 10;
   animation: 1s ease-out nav;
+}
+.close,.open,.side{
+  display: none;
 }
 @keyframes nav {
   from {
@@ -61,24 +65,30 @@ main {
 
 .accueil-photos div {
   display: flex;
-  flex-wrap: nowrap;
   gap: 20px;
   justify-content: center;
   padding-top: 20px;
 }
-
 .accueil-introduction {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  align-items: flex-start;
-  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15%;
+  flex-flow: wrap;
 }
-
+.intro {
+  width: 50%;
+  box-sizing: border-box;
+}
 .accueil-introduction h1 {
   margin-bottom: 15px;
 }
-
+.accueil-introduction img {
+  width: 50%;
+  box-sizing: border-box;
+}
 .accueil-introduction p {
   margin-bottom: 30px;
 }
@@ -268,22 +278,53 @@ footer .footer .footer-links .yudil-partenaire a {
 }
 .icons {
   margin-left: -29%;
+  display: flex;
 }
 
 /* .AAN{
   margin-left: -500px;
 } */
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 320px) {
   body {
-    max-width: 480px;
+    max-width: 320px;
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
   }
   main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  .navigation .logos h2 {
+  .test-none,.close{
     display: none;
+  }
+  .close{
+    color: #8e86b5;
+  }
+  .open{
+    display: block;
+    color: #8e86b5;
+  }
+  .side{
+    height: auto;
+    top: 13%;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+  .side .side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 40px;
+    width: 50%;
+    background-color: #8e86b5;;
+    position: absolute;
+    padding-left: 10px;
+    right: 0;
+    top: 0;
   }
   .lgs {
     width: 50px;
@@ -295,7 +336,7 @@ footer .footer .footer-links .yudil-partenaire a {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
   }
   .accueil-photos {
     width: 100%;
@@ -305,104 +346,110 @@ footer .footer .footer-links .yudil-partenaire a {
     align-items: center;
   }
   .intro {
-    width: 100%;
+    width: 300px;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .intro h1 {
-    font-size: 1.2em;
-    margin-left: -11px;
-  }
-  .les-images {
+    box-sizing: border-box;
+    flex-flow: wrap;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    padding: 10px;
+    margin-left: -40px;
   }
-  .images-none {
-    display: none;
+  .intro h1 {
+  font-size: 1.2em;
   }
   .accueil-introduction {
     margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    height: auto;
+    width: 320px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .accueil-introduction img {
+    width: 80%;
+    height: 350px;
+  }
+  .accueil-photos div {
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+  }
+  .ullistration-img{
+    box-sizing: border-box;
+    width: 280px;
+    height: 200px;
+    border-radius: 2px;
+  }
+  .images-none {
+    display: none;
   }
   .navigation {
     position: fixed;
     top: 0;
     z-index: 10;
   }
-  .link-non {
-    display: none;
-  }
   footer {
+    border-top: 1px solid #fff;
     display: flex;
-    border-top: 1px solid grey;
     font-size: 14px;
     width: 100%;
+    height: 200px;
+    padding: 10px 0;
   }
-  .footer {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100%;
+  footer .footer {
+    width: 300px;
     height: auto;
-    background-color: transparent;
   }
-  .foot-header {
+  footer .footer .foot-header {
     padding: 0;
     margin: 0;
     position: initial;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 300px;
     height: auto;
     box-shadow: 0px 0px 0px;
   }
-  .foot-header div {
-    display: flex;
-    gap: 10px;
-    width: 30px;
-    padding-left: 0;
-
-    background-color: transparent;
-  }
-  .foot-header div p {
-    display: flex;
-  }
-  .icons {
-    left: 25%;
-    display: flex;
+  .footer-links .media .icons {
+    left: 7%;
     position: absolute;
-    bottom: 15%;
+    display: flex;
+    margin-bottom: -10px;
   }
-  .footer-links {
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
+  footer .footer .footer-links {
+   width: 300px;
+   height: 100%;
+   box-shadow: 0 0 0 0;
   }
   .appel {
     position: absolute;
-    top: 200%;
-    left: 0;
+    top: 0;
+    left: -10%;
     width: 50rem;
   }
   .mssg {
     position: absolute;
-    top: 300%;
-    left: 0;
+    top: 30%;
+    left: -10%;
   }
   .location {
     position: absolute;
-    top: 400%;
-    left: 0;
+    top: 60%;
+    left: -10%;
   }
+  .link-non {
+    display: none;
+  }
+
   form {
-    width: 100%;
+    width: max-content;
+    margin-left: -20px;
+    /* background-color: green; */
   }
   .section-contact {
     width: 100%;
@@ -440,7 +487,7 @@ footer .footer .footer-links .yudil-partenaire a {
   }
   .cta {
     transition: all 0.3;
-    padding: 10px 160px;
+    padding: 10px 100px;
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -448,9 +495,7 @@ footer .footer .footer-links .yudil-partenaire a {
   .cta :hover {
     transform: scale(1.1);
   }
-}
-.icons {
-  display: flex;
+  
 }
 @media screen and (min-width: 358px) and (max-width: 768px) {
   body {
@@ -464,6 +509,9 @@ footer .footer .footer-links .yudil-partenaire a {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .navigation{
+    height: 20vh;
   }
   .accueil-introduction {
     width: 100%;
@@ -524,13 +572,15 @@ footer .footer .footer-links .yudil-partenaire a {
   .yudil-img-none {
     display: none;
   }
-  .foot-header {
-    width: 100%;
-    height: 20vh;
-    background-color: #fff;
+  footer .footer .foot-header {
+    width: 90%;
+    height: 15vh;
+    margin-top: -30px;
   }
   .icons {
     margin-left: -58%;
+    display: flex;
+    margin-bottom: 30px;
   }
   .ant {
     width: 100%;
