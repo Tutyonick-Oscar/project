@@ -365,8 +365,8 @@ footer .footer .footer-links .yudil-partenaire a {
     border-right: 1px solid #8e86b5;
     border-bottom: 1px solid #8e86b5;
     padding: 10px;
-    width: 460px;
-    margin-left: -70px;
+    width: 400px;
+    margin-left: -30px;
   }
   .section-tarifs {
     width: 100%;
@@ -375,8 +375,8 @@ footer .footer .footer-links .yudil-partenaire a {
     justify-content: center;
   }
   .section-tarifs .details {
-    width: 460px;
-    margin-left: -70px;
+    width: 100%;
+    /* margin-left: -70px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,20 +391,21 @@ footer .footer .footer-links .yudil-partenaire a {
     margin-left: 1px;
   }
   .section-tarifs .tarif {
-    width: 460px;
+    width: 100%;
     display: flex;
-    margin-left: -70px;
+    /* margin-left: -70px; */
     flex-direction: column;
     justify-content: center;
   }
   .tarif .img-container {
+    /* background-color: green; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
  .product-details .alls-datails{
-  width: 400px;
+  width: 350px;
   height: auto;
   margin-left: auto;
  }
@@ -413,11 +414,8 @@ footer .footer .footer-links .yudil-partenaire a {
  }
   .product-details .img-view {
     align-self: center;
-    width: 80%;
-    height: 250px;
-  }
-  .product-details .btn{
-    margin-left: 50px;
+    width: 110%;
+    height: 200px;
   }
   footer {
     display: flex;
