@@ -3,7 +3,7 @@ const observer = new IntersectionObserver((photo) => {
   photo.forEach((el) => {
     if (el.isIntersecting) {
       el.target.animate(
-        [{ transform: "scale(0.5)" }, { transform: "scale(1)" }],
+        [{ transform: "scale(0.7)" }, { transform: "scale(1)" }],
         {
           duration: 800,
         }

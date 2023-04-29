@@ -1,5 +1,5 @@
 let imgs = document.querySelectorAll(".js-imgs");
-let form = document.querySelector(".section-contact");
+let form = document.querySelector(".formulaire");
 const observer = new IntersectionObserver(
   (observed) => {
     observed.forEach((element) => {
@@ -7,7 +7,7 @@ const observer = new IntersectionObserver(
         element.target.animate(
           [
             {
-              transform: "scale(0.5)",
+              transform: "scale(0.7)",
               opacity: 1,
             },
             {
@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(
               opacity: 1,
             },
           ],
-          { duration: 1000 }
+          { duration: 800 }
         );
       }
     });
