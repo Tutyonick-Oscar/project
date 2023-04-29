@@ -96,6 +96,7 @@ h2 {
 }
 .details h2 {
   margin-left: -40%;
+  color: green;
 }
 .details ul {
   margin-top: -3rem;
@@ -114,6 +115,9 @@ h2 {
   display: flex;
   margin-top: -5%;
   gap: 20px;
+}
+.tarif h2{
+  color: green;
 }
 /*all details in display none*/
 .alls-datails {
