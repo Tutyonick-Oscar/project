@@ -9,13 +9,13 @@ body {
 }
 main {
   width: 100%;
-  background-image: url(../images/YUDIL\ CONGO\ SARL.png);
+  /* background-image: url(../images/YUDIL\ CONGO\ SARL.png);
   background-repeat: no-repeat;
   background-size: 500px;
   background-attachment: fixed;
-  background-blend-mode: darken;
+  background-blend-mode: darken; */
   background-color: #1f2039b6;
-  background-position: center;
+  /* background-position: center; */
 }
 .close,.open,.side{
   display: none;
@@ -114,7 +114,6 @@ h2 {
   display: flex;
   margin-top: -5%;
   gap: 20px;
-  /* position: relative; */
 }
 /*all details in display none*/
 .alls-datails {
