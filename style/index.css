@@ -345,7 +345,7 @@ footer .footer .footer-links .yudil-partenaire a {
     justify-content: center;
     align-items: center;
   }
-  .intro {
+  .accueil-introduction .intro {
     width: 300px;
     height: auto;
     display: flex;
@@ -363,7 +363,7 @@ footer .footer .footer-links .yudil-partenaire a {
   .accueil-introduction {
     margin-top: 5%;
     height: auto;
-    width: 320px;
+    width: 300px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -497,7 +497,7 @@ footer .footer .footer-links .yudil-partenaire a {
   }
   
 }
-@media screen and (min-width: 358px) and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
   body {
     max-width: 768px;
     height: auto;
