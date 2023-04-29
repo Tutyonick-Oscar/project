@@ -332,8 +332,7 @@ footer .footer .footer-links .yudil-partenaire a {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    width: 50%;
-    margin-left: -150px;
+    width: 100%;
   }
   .accueil-photos {
     width: 100%;
@@ -342,17 +341,18 @@ footer .footer .footer-links .yudil-partenaire a {
     justify-content: center;
     align-items: center;
   }
+  .accueil-photos h2{
+    margin-top: -50px;
+  }
   .accueil-introduction .intro {
     width: 100%;
     height: auto;
     display: flex;
     box-sizing: border-box;
     flex-flow: wrap;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     padding: 10px;
-    /* margin-left: -40px; */
   }
   .intro h1 {
   font-size: 1.2em;
@@ -389,13 +389,14 @@ footer .footer .footer-links .yudil-partenaire a {
     position: fixed;
     top: 0;
     z-index: 10;
+    height: 8vh;
   }
   footer {
     border-top: 1px solid #fff;
     display: flex;
     font-size: 14px;
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 10px 0;
   }
   footer .footer {
@@ -413,10 +414,9 @@ footer .footer .footer-links .yudil-partenaire a {
     box-shadow: 0px 0px 0px;
   }
   .footer-links .media .icons {
-    left: 7%;
+    left: 20%;
     position: absolute;
     display: flex;
-    margin-bottom: -10px;
   }
   footer .footer .footer-links {
    width: 100%;
@@ -425,19 +425,18 @@ footer .footer .footer-links .yudil-partenaire a {
   }
   .appel {
     position: absolute;
-    top: 0;
-    left: -10%;
-    width: 50rem;
+    top: 15%;
+    left: 0;
   }
   .mssg {
     position: absolute;
-    top: 30%;
-    left: -10%;
+    top: 40%;
+    left: -0;
   }
   .location {
     position: absolute;
     top: 60%;
-    left: -10%;
+    left: 0;
   }
   .link-non {
     display: none;

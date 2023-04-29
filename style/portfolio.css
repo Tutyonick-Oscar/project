@@ -103,9 +103,9 @@
 .AAN{
   margin-left: -500px;
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:480px) {
   body{
-   max-width: 320px;
+   max-width: 480px;
   }
   main{
     width: 100%;
@@ -149,22 +149,22 @@
   .ydl-presente h1{
     margin-top:-5px;
     font-size: 2em;
+    margin-left: 40px;
   }
   .portfolio-section-photos {
     width: 100%;
-   
   }
   .portfolio-section-photos h2{
     margin-bottom: 30px;
     margin-top: -30px;
   }
   .grid-paysages {
-    width: 300px;
-    margin-left: -72px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows: 200px 200px 200px;
     padding: 0 20px; 
+    gap: 60px;
   }
   .grid-paysages a{
     display: flex;
@@ -175,7 +175,8 @@
   }
   .grid-paysages img{
     border-radius: 2px;
-    width: 100%;
+    width: 150%;
     height: 200px;
+    margin-left: -70px;
   }
 }
